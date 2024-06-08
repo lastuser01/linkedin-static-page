@@ -427,11 +427,14 @@ main{
             box-sizing:border-box;			
 		  }
 		  .dots{
-			  margin-left:250px;
+			 position:relative;
+			 margin-left:460px;
+			 bottom: 5px;
 			 
 		   }
 		   .dots2{
-			   margin-left:200px;
+			   margin-left:410px;
+			   bottom: 5px;
 		   }
 		  
 		  .post_like{
