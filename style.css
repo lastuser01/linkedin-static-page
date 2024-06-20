@@ -3,24 +3,26 @@
  margin:0; 
  padding:0;
  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
+ box-sizing: border-box;}
  
  body{
  background-color:#916e292c;
  height:1000px;
- width:100%;
+ width:1517px;
  box-sizing:border-box;
+ font-size: 15px;
  }
  
  body a{
  text-decoration:none;
+ color: #555;
  }
  
  
  
 
 #navbar{
- height:50px;
+ height:52px;
  width:1518px;
  background-color:white;
  display:flex;
@@ -29,17 +31,15 @@
  }
 
     .navbar_left{
-    height:50px;
-    width:700px;
+    height:52px;
     display:flex;
     flex-direction:row;
     box-sizing:border-box; 
 	align-items:center;
-	padding-left:10px;
+	padding-left: 185px;
     }
         .input_field{
-		height:50px;
-       width:680px;
+		height:52px;
 		position:relative;
 		display:flex;
         /* background-color: #4DFFFF; */
@@ -48,23 +48,27 @@
 		}
 		
 		     .input_field i{
-		     margin-left:5px;     
+		     margin-left:10px;     
 		     position:absolute;
+			 font-size: 18px;
+			 font-weight: bold;
 		     }
 		
              #logo{
              height:60px;
-             aspect-ratio:1;}
+             aspect-ratio:1;
+			}
      
              .input{
 			 position:relative;
-			 padding:5px 27px;
+			 padding:5px 35px;
              outline:none;
               border:none;
-             height:30px;
-            width:400px;
+             height:35px;
+            width:280px;
              background-color:#6cb0b84f;
 			 box-sizing:border-box;
+			 border-radius: 5px;
              }
 			 
 			 .input::placeholder{
@@ -87,24 +91,29 @@
 		
     .navbar_right{
 	height:50px;
-    width:810px;
+	width: 700px;
 	display:flex;
     flex-direction:row;
-    box-sizing:border-box; 
 	align-items:center;
-	margin-right:25px;
-	box-sizing:border-box;
+	margin-left: 95px;
+	padding: 0 10px;
+	justify-content: space-evenly;
 	}
 	     .navbar_right_icons{
-	     width:330px;
-		 display:flex;
+			width:94px;
+			height:50px;
+		 display:grid;
          flex-direction:column;
          box-sizing:border-box; 
 	     align-items:center;   
-		 font-size:15px;
+		 font-size:22px;
 		 text-align:center;
-		 white-space: nowrap;
-		 /* background-color: aquamarine; */
+		 flex-wrap: nowrap;
+		 padding: 0 10px;
+		 }
+		 
+		 .navbar_right_icons:hover{
+        color: black;
 		 }
 		 
 		     .navbar_right_text{
@@ -117,10 +126,7 @@
          box-sizing:border-box; 
 	     align-items:center;
 		 height:50px;
-         width:200px;
 		 box-sizing:border-box;
-		 margin-left:10px;
-		 /* background-color: #81f025; */
 		 }
 		 
 		     .navbar_right_icons_user_1{
@@ -152,35 +158,28 @@
 		         .navbar_right_icons_text{
 				  height:50px;
                   width:10vw;
-                  color:#555;				  
+                  color:#f8db59;				  
 				  font-size:13px;
 				 margin-left:35px;
-				 padding-top:11px;
+				 padding-top:7px;
+				 text-decoration: underline;
 				 }
 		 
-		 .navbar_right .navbar_right_icons_user .navbar_right_icons_user_1 #anchor:hover,
-		 .navbar_right .navbar_right_icons_user .navbar_right_icons_user_1 #dropdown:hover,
-		 .navbar_right .navbar_right_icons #anchor1:hover,
-		  .navbar_right .navbar_right_icons #anchor2:hover,
-		  .navbar_right .navbar_right_icons #anchor3:hover,
-		  .navbar_right .navbar_right_icons #anchor4:hover,
-		  .navbar_right .navbar_right_icons #anchor5:hover,
-		  .navbar_right_text:hover{
-			 color:#111;
-			 font-weight:bold;
-		 }
+				 .navbar_right .navbar_right_icons a:hover{
+					color:#090909c2;
+					font-weight: bold;
+				 }
+
 		 .navbar_right_icons_text:hover{
-		 color:#111;
-		 text-decoration:underline;
+			font-size: 14px;
 		 }
-		 .navbar_right .navbar_right_icons_user .navbar_right_icons_user_1 #anchor,
-		 .navbar_right .navbar_right_icons_user .navbar_right_icons_user_1 #dropdown,
+
 		 .navbar_right .navbar_right_icons #anchor1,
 		  .navbar_right .navbar_right_icons #anchor2,
 		  .navbar_right .navbar_right_icons #anchor3,
 		  .navbar_right .navbar_right_icons #anchor4,
 		  .navbar_right .navbar_right_icons #anchor5{
-			 color:#555;
+			 color:#2a2828c2;
 		  }
 		 
 .material-symbols-outlined {
@@ -219,43 +218,48 @@
 
 main{
 	height:1500px;
-	width:1500px;
-	margin-left:1%;
+	width:1130px;
 	display:flex;
 	flex-direction:row;
+	margin-left: 195px;
+	margin-right: 195px;
+	grid-template-columns: 225px auto 300px ;
+	gap: 25px;
 	box-sizing:border-box;
-	justify-content:space-evenly;
 }
 
 .left-panel{
-	width:300px;
+	width:225px;
 	display:flex;
 	flex-direction:column;
     gap:10px;
-    margin-top:15px;
+    margin-top:25px;
 	/* background-color: red;	 */
 }
      .left-panel_top{
-		width:300px;
-		height:500px;
+		width:225px;
 		box-sizing:border-box;
 		display:flex;
 		flex-direction:column;
 		align-items:center;
-		background-color:white;
+		gap: 10px;
 		 border-radius:10px;
 	 }
 
          .left-panel_top_profile_pic{
-			width:300px;
+			width:225px;
 			 display:flex;
+			 height:180px;
 	         flex-direction:column;
 			 box-sizing:border-box; 
+			 gap: 10px;
+			 background-color:white;
+			 border-radius: 10px;
 			 /* background-color: aqua; */
 		 }
 		          .background{
-					width:300px;
-				    height:120px;
+					width:225px;
+				    height:80px;
 					border-radius: 10px 10px 0 0;
 				      background-image:url(2.jpg);
 				      background-size:cover;
@@ -265,34 +269,37 @@ main{
 			      }
 			 
 			      #profile_pic{
-	                  height:100px;
-	                  width:100px;
+	                  height:80px;
+	                  aspect-ratio: 1;
 	                  border-radius:50%;
 	                  background-color:white;
 				      position:absolute;
-				     margin:20% 35%;
+				     top: 40px;
+					 left: 73px;
                       }             
 		          .profile_des{
 		    	     display:flex;
 	                  flex-direction:column;
-					  width:300px;
-		    	      height:18vh;
+					  width:225px;
+		    	      height:100px;
 		    	      align-items:center;
 		    	      justify-content:center;
 		    	      padding-top:20px;
 		    	      box-sizing:border-box;
-					  border-bottom:1px #999 solid;
+					 border-radius: 10px;
 		          }
 		 
 		 .left-panel_top_profile_info{
-				 height:420px;
-				 width:300px; 
+			height:175px;
+				 width:225px; 
 				 padding:0 20px;
 				 box-sizing: border-box;
 				 justify-content:space-evenly;
+				 background-color:white;
+				 border-radius: 10px
 		 }
 		              .connection{
-						  height:15vh;
+						  height:10vh;
 						  display:flex;
 	                      flex-direction:column;
 						  justify-content:space-around;
@@ -325,8 +332,8 @@ main{
 							}
 							
 		 .left-panel_bottom{
-			width:300px;   
-		 	height:450px;			
+			width:225px;   
+		 	height:350px;			
 			background-color:white;
 			padding:0 20px;
 			display:flex;
@@ -338,40 +345,47 @@ main{
                      
 			  
 .middle-panel{
-	max-width:690px;
-	margin-top:15px;
+	width: 555px;
+	margin-top:25px;
 	display:flex;
 	flex-direction:column;
 	gap:15px;
 }
          .post_box{
-			max-width:690px;
-			height:130px;
+			width: 555px;
+			height:120px;
              background-color:white;
 	        display:flex;
 	        flex-direction:column;
 			border-radius:10px;
 			box-sizing:border-box;
          }
-		 .box_1,.box_2,.icon_ad{
+		 .box_1,.icon_ad{
 			 display:flex;
 	        flex-direction:row;
 			 align-items:center;
 			 justify-content:space-evenly;
+		 }
+		 .box_2{
+			height: 60px;
+			display:flex;
+	        flex-direction:row;
+			align-items:center;
+			justify-content:space-around;
 		 }
 		 .box_1{
 			 padding:10px 0; 
 		 }
 		 
 		 .main_sec_pic{
-			  height:8vh;
+			  height:50px;
 			  aspect-ratio:1;
 			  background-color:rgba(9,9,9,0.15);
 			  border-radius:50%;
 		 }
 		 .box_1 input{
+			width: 467px;
 			 height:40px;
-		  width:37vw;
         border:1.5px solid #999;
         border-radius:30px; 
         background-color:transparent;
@@ -382,21 +396,22 @@ main{
 		 .ri-youtube-fill{
 			 color:#81f025;
 			font-size:22px;
+			margin: 0px 15px;
 		 }
 		 .ri-calendar-event-fill{
 			 color:yellow;
 			font-size:20px;
+			margin: 0px 15px;
 		 }
 		 #article,#article_1{
 			 color:red;
-			font-size:22px;
-			margin:-10px -22px;
+			font-size:15px;
+			margin: -5px 5px;
 		 }
 		 
-		 
 		 .post_1{
-			 height:520px;
-			width:690px;
+			width: 555px;
+			 height:430px;
 		    background-color:white;
 		     display:flex;
 		    flex-direction:column;
@@ -407,8 +422,8 @@ main{
 		 }
 		 
 		 .post_2{
-			 height:690px;
-			 width:690px;
+			width: 555px;
+			 height:600px;
 		    background-color:white;
 		     display:flex;
 		    flex-direction:column;
@@ -423,17 +438,18 @@ main{
 			display:flex;
 		    flex-direction:row; 
             width:690px;
+			height: 72px;
 			padding:0 10px;
             box-sizing:border-box;			
 		  }
 		  .dots{
 			 position:relative;
-			 margin-left:460px;
+			 margin-left:350px;
 			 bottom: 5px;
 			 
 		   }
 		   .dots2{
-			   margin-left:410px;
+			   margin-left:290px;
 			   bottom: 5px;
 		   }
 		  
@@ -444,10 +460,12 @@ main{
 		  }
 		 
 .right-panel{
-	width: 370px;
+	width: 300px;
 	 display:flex;  
 	 flex-direction:column;	 
      gap:10px;
+	 margin-top:25px;
+
 }
       .right-panel_top,.right-panel_middle,.right-panel_bottom{
 		  display:flex;     
@@ -456,14 +474,14 @@ main{
 	     border-radius:10px;
 		 box-sizing:border-box;
 		 justify-content:space-evenly;
-		  padding:5px 28px;
-		  width: 370px;
+		  padding:0px 28px;
+		  width: 300px;
 		 }
 		 
+		 
 		  .right-panel_top{
-		 margin-top:20px;
-		 min-height:250px;
-		 width: 370px;
+		 height:250px;
+		 width: 300px;
 		  }
 		  
 		  .head,.head_2,.head_3{
@@ -474,20 +492,20 @@ main{
 			  }
 			  
 		  .logos{
-			  height:50px;
-			  aspect-ratio:1;
-			  padding:10px 5px;
+			  height:60px;
+			  width: 60px;
+			  padding:10px 0px;
 			  
 		  }
 		  #uni{
-			  margin-right:15px;
-			  margin-left:5px;
+			  margin-right:40px;
+			  margin-left:30px;
 		  }
 		  .comp{
 			  display:flex;
 			   flex-direction:row;
 			    justify-content:space-evenly;
-				min-height:12vh;
+				min-height:100px;
 				padding:5px 0px;
 		  }
 		  .comp .descp button{
@@ -508,3 +526,4 @@ main{
 					display:flex;
 			   flex-direction:column;
 				}
+

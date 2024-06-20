@@ -5,16 +5,11 @@
 <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>linkedin static page demo</title>
-<link rel="icon" href="logo.webp" type="image/x-icon" >
+<link rel="icon" href="logo.webp" type="image/x-icon"  >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 <link rel="stylesheet" href="style.css">
-<style> 
- 
 
-
-</style>
 </head>
 <body>
 <!--------------------------------------- navbar --------------------------------------------------------->
@@ -34,37 +29,40 @@
 	
 	    <div class="navbar_right">
 		     <div class="navbar_right_icons">
-		           <a href="#"><i id="anchor5" class="ri-home-4-fill"></i></a>
-				   <a href="#" class="navbar_right_text">Home</a>
+		           <a href="#" id="qwert">
+					<i id="anchor5" class="ri-home-4-fill"></i>
+				   <p class="navbar_right_text">Home</p>
+				</a>
 		     </div>
 		     <div class="navbar_right_icons">
-		          <a href="#"><i id="anchor4" class="ri-group-fill"></i></a>
-				  <a href="#" class="navbar_right_text">My network</a>
+		          <a href="#"><i id="anchor4" class="ri-group-fill"></i>
+				  <p class="navbar_right_text">My network</p></a>
 		     </div>    
 		     <div class="navbar_right_icons">
-		          <a href="#"><i id="anchor3" class="ri-briefcase-fill"></i></a>
-				  <a href="#"class="navbar_right_text">Jobs</a>
+		          <a href="#"><i id="anchor3" class="ri-briefcase-fill"></i>
+				  <p class="navbar_right_text">Jobs</p></a>
 		     </div>
 		     <div class="navbar_right_icons">
-		          <a href="#"><i id="anchor2" class="ri-message-2-fill"></i></a>
-				  <a href="#"class="navbar_right_text">messaging</a>
+		          <a href="#"><i id="anchor2" class="ri-message-2-fill"></i>
+				  <p class="navbar_right_text">messaging</p></a>
 		     </div>   
 		     <div class="navbar_right_icons">
-		          <a href="#" ><i id="anchor1" class="ri-notification-3-fill"></i></a>
-				  <a href="#" class="navbar_right_text">notifications</a>
+		          <a href="#" ><i id="anchor1" class="ri-notification-3-fill"></i>
+				  <p class="navbar_right_text">notifications</p></a>
 		     </div>
 			 <div class="navbar_right_icons_user">
 			     <div class="navbar_right_icons_user_1">
-			             <a href="#" ><span  id="anchor" class="material-symbols-outlined">account_circle</span></a>
-			             <a href="#" ><span id="dropdown" class="material-symbols-outlined">arrow_drop_down</span></a>
+			             <a href="#" ><span  id="anchor" class="material-symbols-outlined">account_circle</span>
+			             <span id="dropdown" class="material-symbols-outlined">arrow_drop_down</span></a>
 				  </div>
-				  <a href="#" style="color:#555;" class="navbar_right_icons_text">Try premium free for 1 month</a>
+				  <a href="#" style="color:#977c23;" class="navbar_right_icons_text">Try premium free for 1 month</a>
 			 </div>
 		</div>
 	</nav>
 	
 	<!--------------------------------------- main Body--------------------------------------------------------->
 	<main id="main">
+		
 	     <div class="left-panel">
 	             <div class="left-panel_top">
 	                     <div class="left-panel_top_profile_pic">
@@ -72,7 +70,7 @@
 								<a href="#" class=""><img src="profile.png" id="profile_pic"></a>
 								</div>
 								<div class="profile_des">
-								     <span><b>Yash Yadav</b></span>
+								     <h1 style="font-size: 18px;">YASH YADAV</h1>
 								      <span>Technical trainer at Google</span>
 								</div>
 	                     </div>
@@ -121,24 +119,24 @@
 				        		 <input type="text" class="" placeholder="share a post">
 				         </div>
 				         <div class="box_2">
-				                 <div class="icon_ad">
-								     <a href="#" ><span id="article_1" style="color:#4DFFFF;" class="material-symbols-outlined">imagesmode</span></a>
-				        		     <a href="#">Photo</a>
-								 </div>
+				                 <a class="icon_ad">
+									<a href="#"><span id="article_1" style="color:#4DFFFF;" class="material-symbols-outlined">imagesmode</span></a>
+				        		     <p>Photo</p>
+								 </a>
 				                 
-								 <div class="icon_ad ">
-								     <a href="#"><i class="ri-youtube-fill"></i></a>
-				        		     <a href="#">Video</a>
-								 </div>
+								 <a class="icon_ad ">
+								     <i class="ri-youtube-fill"></i>
+				        		     <p>Video</p>
+								 </a>
 						         
-								 <div class="icon_ad ">
-								     <a href="#"><i class="ri-calendar-event-fill"></i></a>
-				        		     <a href="#">Event</a>
-								 </div>
-								 <div class="icon_ad " id="ad">
-								     <a href="#"><span id="article" class="material-symbols-outlined">newsmode</span></a>
+								 <a class="icon_ad ">
+								     <i class="ri-calendar-event-fill"></i>
+				        		     <p>Event</p>
+								 </a>
+								 <a class="icon_ad " id="ad">
+								     <a href="#"><span id="article" class="material-symbols-outlined">newsmode</span>
 				        		     <a href="#">Write article</a>
-								 </div>
+								 </a>
 						 </div>
 				 </div>
                  <div class="post_1">
@@ -202,32 +200,32 @@
 		 <div class="right-panel">
 		         <div class="right-panel_top">
 				      <div class="head">
-				         <div class=" ">LinkedIn news</div>
+				         <div style="font-size: 15px;">LinkedIn news</div>
                          <i class="ri-information-fill"></i>						 
 				      </div>  
 						<ul>
 						      <li><b>Indian crosses 3,58,974 daily cases</b></li>
-							      <span>10h ago</span> <span>5,043 readers</span>
+							      <span>10h ago</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5,043 readers</span>
 							  <li><b>Zomato files for $1.28 IPO</b></li>
-							       <span>13h ago</span> <span>50,043 readers</span>
+							       <span>13h ago</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50,043 readers</span>
 							  <li><b>Jobs pay ,in IT soar</b></li>
-							       <span>1d ago</span> <span>5,043 readers</span>
+							       <span>1d ago</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5,043 readers</span>
 							  <li><b>Google saving $1B a year from WFH</b></li>
-							       <span>2d ago</span> <span>5,043 readers</span>
+							       <span>2d ago</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5,043 readers</span>
 						 
 						 </ul>
 				 </div>
 				 
 				 <div class="right-panel_middle">
 				      <div class="head_2">
-				         <div class=" ">Today's most viwed courses</div>
+				         <div style="font-size: 15px;">Today's most viwed courses</div>
                          <i class="ri-information-fill"></i>						 
 				      </div>    
 						 <ul>
 						      <li><b>Indian crosses 3,58,974 daily cases</b></li>
-							      <span>10h ago</span> <span>5,043 readers</span>
+							      <span>10h ago</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5,043 readers</span>
 							  <li><b>Indian crosses 3,58,974 daily cases</b></li>
-							      <span>10h ago</span> <span>5,043 readers</span>
+							      <span>10h ago</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5,043 readers</span>
 						 </ul>
 				 </div>
 				 
